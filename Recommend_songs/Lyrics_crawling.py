@@ -25,11 +25,11 @@ for i in song_list:
     driver.find_element(By.XPATH, '//*[@id="conts"]/div[*]/div/ul/li/dl/dd[1]/a').click() # 가사 란 클릭
     driver.execute_script('window.scrollTo(0, 500)')
     time.sleep(1)
-    driver.find_element(By.XPATH, '//*[@id="lyricArea"]/button').click()
+    driver.find_element(By.XPATH, '//*[@id="lyricArea"]/button').click() # 가사 전체 확인 가능하게 하는 버튼 클릭
     time.sleep(1)
-    lyrics = driver.find_element(By.ID, 'd_video_summary')
+    lyrics = driver.find_element(By.ID, 'd_video_summary') # 가사가 담긴 element로부터 가사를 저장
     time.sleep(1)
-    get_lyrics = lyrics.text
-    music_df.loc[f'{i}'] = get_lyrics
+    get_lyrics = lyrics.text # 저장된 가사 데이터에서 텍스트 데이터를 추출
+    music_df.loc[f'{i}'] = get_lyrics # 데이터를 원하는 row에 추가
 driver.close()
-music_df.to_csv('C:\develop_dir\playdata_project\music_resting_place\Recommend_songs\lyrics_v2.csv')
+music_df.to_csv('C:\develop_dir\playdata_project\music_resting_place\Recommend_songs\lyrics_v2.csv') # 데이터프레임 출력
