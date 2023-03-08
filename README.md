@@ -1,40 +1,42 @@
-# Guide for use this repo
+# Music resting place
+일상에 지친 마음을 위로받고 쉬어갈 수 있게 하는 음악 상담사를 인공지능 기술을 이용해 구현하는 프로젝트   
 
-1. main branch에서 lower branch로 분기해서 각자 작업한 후에
+속마음을 털어놓으면 힘든 감정을 해소할 수 있게 돕고, 기쁜 일이있었다고 이야기 하면 함께 기뻐해주고 그 대화에 맞는 노래를 들려주는 AI 상담사로부터 갈수록 빠르게 흘러가는 사회 흐름에 지쳐가는 현대인들이 자신의 아픔들을 치유하는데 도움을 받기를 기대한다
 
-2. '음.. 지금의 결과를 하나의 버전으로 main에 반영하고 싶은데?' 할 때 푸쉬를 하고 나서
+# 프로젝트 기간
+2023년 3월 3일 ~ 2023년 3월 9일
 
-3. pull request를 거쳐 충돌 문제는 없는지와 필요하다면 부가적인 확인을 한 후에 merge를 하고
+# 팀 구성원 및 역할
+`우상욱`: Frontend, Backend, Chat Bot develop, ML/DL modeling, Data refinement & manifacturing    
+`황도희`: Fill out the Chat Bot questionnaire, Data scraping(Youtube link), ML modeling  
+`민병창`: DL modeling, subword tokenize, Algorithm of song's recommend   
+`서영호`: Data preprocessing, ML modeling  
+`신제우`: KoBERT modeling, Data scraping(lyrics)   
 
-4. 하나의 버전을 만들기 위해 생성했던, 작업하는 동안 위치해있던 branch를 삭제
+# 기술 스택
+### Programming Language
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=black">
 
-5. 그리고 나서 다음 작업을 하기 위해선 다시 분기점 생성(branch 생성)
+### ✔️Frond-end ✔️Back-end
+<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=black">
 
-6. 다시 2번부터 동일하게 진행
+### Modeling
+<img src="https://img.shields.io/badge/GridSearchCV-994B4B?style=for-the-badge&logo=&logoColor=black"><img src="https://img.shields.io/badge/RandomSearchCV-184B4B?style=for-the-badge&logo=&logoColor=black"><img src="https://img.shields.io/badge/Catboost-774B4B?style=for-the-badge&logo=&logoColor=black"><img src="https://img.shields.io/badge/LSTM-664B4B?style=for-the-badge&logo=&logoColor=black"><img src="https://img.shields.io/badge/GRU-593B4B?style=for-the-badge&logo=&logoColor=black"><img src="https://img.shields.io/badge/RandomForest-444B4B?style=for-the-badge&logo=&logoColor=black"><img src="https://img.shields.io/badge/KoBERT-92AB4B?style=for-the-badge&logo=&logoColor=black">
 
-# 3/6 MEMO
+### Data handling
+<img src="https://img.shields.io/badge/Pandas-0A0A20?style=for-the-badge&logo=&logoColor=black"><img src="https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=black">
 
-## 신제우 
-### 오늘 할 일
-- KoBERT를 코랩에서 GPU 사용가능할 때까지 파라미터 조정해서 돌려보기
-- 유사도 계산하는 코드에서 감정을 전환하고 싶을 때 하는 계산식에서 일어나는 이상치값 처리를 시도. / [참조 링크](https://gils-lab.tistory.com/94)
+# References
 
+## 참고 문헌
 
-## 민병창 군
-### 오늘 할 일
-- koELECTRA 매무으리 된듯?
-- LSTM 관련 딥러닝 모델 재차 시도
+- SDSN 2022 세계 행복 지수  
+- Bert와 gpt의 차이: scatter lab tech :https://tech.scatterlab.co.kr/transformer-review
+- 챗봇 이미지 : https://www.flaticon.com/kr/free-icon/chatbot_2040946
+- 멜론 : https://www.melon.com/
+- 지니 : https://www.genie.co.kr/
+- YouTubeMusic : https://music.youtube.com
 
-## 서영호 씨
-### 오늘 할 일
-- 머신러닝 좋게 나오게 계속해서 도저어어언 혹은 더 좋은 방안이 있을지 의논해보면 좋을 것 같습니다!
+## 데이터 출처 
 
-## 황도희 양
-### 오늘 할 일
-- 유튜브 링크 찾는 api 도저어언
-### 의논하고 싶은 일
-- 도희 양 말씀 : "노래는 제우, 영호가 한 거 외에 텍스트파일로 리스트 뽑았는데 vs코드와 주피터 노트북 모두 size limit 떠서 가사 불러오진 못함 (help me..)"
-
-## 우상욱 상
-### 오늘 할 일
-- ???
+AI-Hub : 웰니스 심리 상담 데이터셋, 감성분석 말뭉치
