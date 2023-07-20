@@ -33,7 +33,6 @@
 <details>
 <summary>PREVIEW 펼치기</summary>
 <div markdown="1">
-
 <img src="https://github.com/jewoodev/music_resting_place/assets/105477856/e63ff21e-5bb2-43fd-aac0-1de91c487885" alt="image" style="zoom: 50%;" />
 
 > 시스템 아키텍처
@@ -89,7 +88,7 @@
 
 2. 모델링
 
-   - ML : CATBOOST, XGBOSOT, LGBM, GBM 등
+   - ML : CATBOOST, XGBOOST, LGBM, GBM 등
    - DL : LSTM, GRU, RNN, KO-BERT
 
 <img src="https://github.com/jewoodev/music_resting_place/assets/105477856/627c7027-7abc-43c2-970f-8676bc957c7d" alt="image" style="zoom:50%;" />
